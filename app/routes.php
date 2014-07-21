@@ -16,6 +16,12 @@ Route::get('/', function()
 	echo 'Hello World';
 });
 
+Route::get('/test', function()
+{
+	echo 'Hello World';
+});
+
+
 Route::get('/practice', function() {
 
     $fruit = Array('Apples', 'Oranges', 'Pears');
