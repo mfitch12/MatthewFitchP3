@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function()
-{
-	echo 'Hello World';
+Route::get('/', function(){
+    return View::make('index');
+});
+
+Route::get('/lorem', function() {
+    return View::make('lorem');             
+});
+
+Route::get('/usergenerator', function(){
+    return View::make('usergenerator');
 });
 
 Route::get('/test', function()
@@ -24,9 +31,9 @@ Route::get('/test', function()
 
 Route::get('/practice', function() {
 
-    $fruit = Array('Apples', 'Oranges', 'Pears');
-
-    echo Pre::render($fruit,'Fruit');
+    echo App::environment();
+    //$fruit = Array('Apples', 'Oranges', 'Pears');
+    //echo Pre::render($fruit,'Fruit');
 
 });
 
