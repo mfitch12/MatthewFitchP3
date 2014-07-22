@@ -5,7 +5,7 @@
 @stop
 
 @section('description')
-	Fill out the options below and click "generate" to create random users.
+	Fill out the options below and click "Generate Users" to create random users.
 @stop
 
 @section('head')
@@ -18,26 +18,21 @@
 		<form role="form" method="post" action="index.php">
 		  
 		  <div class="form-group">
-		    <label for="numberOfWords"># of paragraphs</label>
+		    <label for="numberOfWords"># of users</label>
 		    <input maxlength=2 type="text" name = "numberOfWords" id="numWords"> (Max 9)
 		  </div>
 
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" name = "addNumber"> Add a random number to the end
+		      <input type="checkbox" name = "addNumber"> Include Birthdate
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" name = "addSymbol"> Add a random symbol to the end
+		      <input type="checkbox" name = "addSymbol"> Include Profile
 		    </label>
 		  </div>
-		  <div class="checkbox">
-		    <label>
-		      <input type="checkbox" name = "addCapitalLetter"> Start with a capital letter
-		    </label>
-		  </div>
-		  <button type="submit" class="btn btn-success">Get new password</button>
+		  <button type="submit" class="btn btn-success">Generate Users</button>
 		  <br><br>
 		</form>
 	</div>

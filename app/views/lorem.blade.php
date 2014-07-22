@@ -5,7 +5,7 @@
 @stop
 
 @section('description')
-	Fill out the options below and click "generate" to create lorem ipsum paragraphs.
+	Fill out the options below and click "Generate" to create lorem ipsum paragraphs.
 @stop
 
 @section('head')
@@ -19,25 +19,10 @@
 		  
 		  <div class="form-group">
 		    <label for="numberOfWords"># of paragraphs</label>
-		    <input maxlength=2 type="text" name = "numberOfWords" id="numWords"> (Max 9)
+		    <input maxlength=2 type="text" name = "numberOfWords" id="numWords"> (Max 99)
 		  </div>
 
-		  <div class="checkbox">
-		    <label>
-		      <input type="checkbox" name = "addNumber"> Add a random number to the end
-		    </label>
-		  </div>
-		  <div class="checkbox">
-		    <label>
-		      <input type="checkbox" name = "addSymbol"> Add a random symbol to the end
-		    </label>
-		  </div>
-		  <div class="checkbox">
-		    <label>
-		      <input type="checkbox" name = "addCapitalLetter"> Start with a capital letter
-		    </label>
-		  </div>
-		  <button type="submit" class="btn btn-success">Get new password</button>
+		  <button type="submit" class="btn btn-success">Generate</button>
 		  <br><br>
 		</form>
 	</div>
