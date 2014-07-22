@@ -34,8 +34,12 @@
 
 	<div class="footer">
 	<p>	
-		# of paragraphs: {{{ $paragraphs }}}
+		# of paragraphs: {{{ $paragraphs }}} <br><br>
 	</p>
+			<section>
+		<p>
+		{{$lorem}}
+		</section>
 		</div>
 @stop
 

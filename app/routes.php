@@ -20,19 +20,27 @@ Route::get('/', function(){
 
 Route::get('/lorem', function() {
 
+
     $paragraphs = 0;
+    $lorem = 'working but no input';
     return View::make('lorem')
-        ->with('paragraphs', $paragraphs);          
+        ->with('paragraphs', $paragraphs)
+        ->with('lorem', $lorem);
 });
 
 Route::post('/lorem', function(){
     $input = Input::all();
     //print_r($input);
 
-    $paragraphs = $input['numberOfParagraphs'];
+    $numParagraphs = $input['numberOfParagraphs'];
+
+    $generator = new Badcow\LoremIpsum\Generator();
+    $paragraphs = $generator->getParagraphs($numParagraphs);
+    $allParagraphs = implode('<p>', $paragraphs);
 
     return View::make('lorem')
-        ->with('paragraphs', $paragraphs);
+        ->with('paragraphs', $numParagraphs)
+        ->with('lorem', $allParagraphs);
 
 });
 
