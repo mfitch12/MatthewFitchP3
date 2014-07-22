@@ -32,15 +32,12 @@
 		<br><br>
 		<a href = '/usergenerator' role="button" class="btn btn-default">Random User Generator</a>
 		<br><br>
-	</div>
+
 	</div>
 
 	<div class="footer">
-	<p>	
 
-
-	</p>
-		</div>
+	</div>
 @stop
 
 @section('footer')
