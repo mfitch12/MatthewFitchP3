@@ -36,7 +36,7 @@
 
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" name = "birthdate"> Include Address
+		      <input type="checkbox" name = "userAddress"> Include Address
 		    </label>
 		  </div>
 		  <div class="checkbox">
@@ -59,7 +59,7 @@
 	<p>	
 		users: {{{ $users }}}
 		<br>
-		address: {{{ $birthdate }}}
+		address: {{{ $userAddress }}}
 		<br>
 		profile: {{{ $profile }}}
 
