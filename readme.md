@@ -17,7 +17,7 @@ http://getbootstrap.com/examples/jumbotron-narrow/
 * Laravel
 http://laravel.com/
 
-* Badxow lorem-ipsum package
+* Badcow lorem-ipsum package
 https://packagist.org/packages/badcow/lorem-ipsum
 
 * fzaninotto faker package
