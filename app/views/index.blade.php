@@ -26,18 +26,18 @@
 
 @section('content')
 
-	<div class = "col-md-12">
-		<h4>Development Tools:</h4>
-		<a href = '/lorem' role="button" class="btn btn-default">Lorem Ipsum Generator</a>
-		<br><br>
-		<a href = '/usergenerator' role="button" class="btn btn-default">Random User Generator</a>
-		<br><br>
+	<div class = "row">
+		<div class = "col-md-6">
+			<h4>Development Tools:</h4>
+			<a href = '/lorem' role="button" class="btn btn-default">Lorem Ipsum Generator</a>
+			<br><br>
+			<a href = '/usergenerator' role="button" class="btn btn-default">Random User Generator</a>
+			<br><br>
+		</div>
 
 	</div>
 
-	<div class="footer">
 
-	</div>
 @stop
 
 @section('footer')

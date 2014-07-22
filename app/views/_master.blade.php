@@ -35,7 +35,13 @@
 
 	  @yield('content')
 
+
+    <div class="footer">
+      <img src = "images/fitchLogo.png" class="img-responsive displayed" alt="logo">
+    </div>
+
     </div> <!-- /container -->
+
 
     <!-- JQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
