@@ -113,8 +113,6 @@ Route::post('/usergenerator', function(){
 });
 
 
-
-
 Route::get('/test', function()
 {
 	echo 'Hello World';
@@ -124,24 +122,6 @@ Route::get('/test', function()
 Route::get('/practice', function() {
 
     echo App::environment();
-    //$fruit = Array('Apples', 'Oranges', 'Pears');
-    //echo Pre::render($fruit,'Fruit');
 
 });
 
-Route::get('/new', function() {
-
-    $view  = '<form method="POST">';
-    $view .= 'Title: <input type="text" name="title">';
-    $view .= '<input type="submit">';
-    $view .= '</form>';
-    return $view;
-
-});
-
-Route::post('/new', function() {
-
-    $input =  Input::all();
-    print_r($input);
-
-});
