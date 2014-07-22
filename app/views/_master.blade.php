@@ -37,7 +37,11 @@
 
 
     <div class="footer">
-      <img src = "images/fitchLogo.png" class="img-responsive displayed" alt="logo">
+      <div class="centerIMG">
+      <a href = "http://www.fitchwebdesign.com">
+      <img src = "images/fitchLogo.png" class="displayed" alt="logo">
+      </a>
+      </div>
     </div>
 
     </div> <!-- /container -->
