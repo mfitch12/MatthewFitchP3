@@ -15,23 +15,24 @@
 @section('content')
 	  <div class = "row">
 		<div class = "col-md-6">
-		<form role="form" method="post" action="index.php">
+		<form role="form" method="post">
 		  
 		  <div class="form-group">
 		    <label for="numberOfWords"># of users</label>
-		    <input maxlength=2 type="text" name = "numberOfWords" id="numWords"> (Max 9)
+		    <input maxlength=2 type="text" name = "numberOfUsers" id="numWords" value = {{{ $users }}}> (Max 9)
 		  </div>
 
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" name = "addNumber"> Include Birthdate
+		      <input type="checkbox" name = "birthdate"> Include Birthdate
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" name = "addSymbol"> Include Profile
+		      <input type="checkbox" name = "profile"> Include Profile
 		    </label>
 		  </div>
+		  <input type = "submit" value = "Submit">
 		  <button type="submit" class="btn btn-success">Generate Users</button>
 		  <br><br>
 		</form>
@@ -45,7 +46,11 @@
 
 	<div class="footer">
 	<p>	
-
+		users: {{{ $users }}}
+		<br>
+		birthdate: {{{ $birthdate }}}
+		<br>
+		profile: {{{ $profile }}}
 
 	</p>
 		</div>

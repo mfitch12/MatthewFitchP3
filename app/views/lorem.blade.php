@@ -15,13 +15,12 @@
 @section('content')
 	  <div class = "row">
 		<div class = "col-md-6">
-		<form role="form" method="post" action="index.php">
+		<form role="form" method="post">
 		  
 		  <div class="form-group">
 		    <label for="numberOfWords"># of paragraphs</label>
-		    <input maxlength=2 type="text" name = "numberOfWords" id="numWords"> (Max 99)
+		    <input maxlength=2 type="text" name = "numberOfParagraphs" id="numWords" value = {{{ $paragraphs }}}> (Max 99)
 		  </div>
-
 		  <button type="submit" class="btn btn-success">Generate</button>
 		  <br><br>
 		</form>
@@ -35,12 +34,13 @@
 
 	<div class="footer">
 	<p>	
-
-
+		# of paragraphs: {{{ $paragraphs }}}
 	</p>
 		</div>
 @stop
 
 @section('footer')
+
+
    
 @stop

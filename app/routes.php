@@ -12,16 +12,64 @@
 */
 
 Route::get('/', function(){
-    return View::make('index');
+    $paragraphs = 0;
+    return View::make('index')
+        ->with('paragraphs', $paragraphs);
 });
+
 
 Route::get('/lorem', function() {
-    return View::make('lorem');             
+
+    $paragraphs = 0;
+    return View::make('lorem')
+        ->with('paragraphs', $paragraphs);          
 });
 
-Route::get('/usergenerator', function(){
-    return View::make('usergenerator');
+Route::post('/lorem', function(){
+    $input = Input::all();
+    //print_r($input);
+
+    $paragraphs = $input['numberOfParagraphs'];
+
+    return View::make('lorem')
+        ->with('paragraphs', $paragraphs);
+
 });
+
+
+Route::get('/usergenerator', function(){
+    
+    $users = 0;
+    $birthdate = 'off';
+    $profile = 'off';
+
+    return View::make('usergenerator')
+        ->with('users', $users)
+        ->with('birthdate', $birthdate)
+        ->with('profile', $profile);
+
+});
+
+Route::post('/usergenerator', function(){
+    
+    //$input = Input::all();
+    //print_r($input);
+
+    $users = Input::get('numberOfUsers');
+    $birthdate = Input::get('birthdate', 'off');
+    $profile = Input::get('profile', 'off');
+
+
+    return View::make('usergenerator')
+        ->with('users', $users)
+        ->with('birthdate', $birthdate)
+        ->with('profile', $profile);
+
+
+});
+
+
+
 
 Route::get('/test', function()
 {
