@@ -17,10 +17,15 @@
 
   <body>
 
+  	
+  	<div class="container">
+  		@yield('header')
+  	<!--
     <div class="container">
 	  <div class="header">
 	    <h3 class="text-muted">Developer's Best Friend</h3>
 	  </div>
+	-->
 
 	  <div class="jumbotron">
 	    <h2 class = "randomWords">@yield('title')</h2>

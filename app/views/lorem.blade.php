@@ -12,6 +12,18 @@
     
 @stop
 
+@section('header')
+    
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="/lorem">Lorem</a></li>
+          <li><a href="/usergenerator">Users</a></li>
+        </ul>
+        <h3 class="text-muted">Developer's Best Friend</h3>
+      </div>
+@stop
+
 @section('content')
 	  <div class = "row">
 		<div class = "col-md-6">

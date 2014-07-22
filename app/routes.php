@@ -22,7 +22,7 @@ Route::get('/lorem', function() {
 
 
     $paragraphs = 0;
-    $lorem = 'working but no input';
+    $lorem = '';
     return View::make('lorem')
         ->with('paragraphs', $paragraphs)
         ->with('lorem', $lorem);
@@ -48,13 +48,15 @@ Route::post('/lorem', function(){
 Route::get('/usergenerator', function(){
     
     $users = 0;
-    $birthdate = 'off';
+    $userAddress = 'off';
     $profile = 'off';
+    $userString = '';
 
     return View::make('usergenerator')
         ->with('users', $users)
-        ->with('birthdate', $birthdate)
-        ->with('profile', $profile);
+        ->with('userAddress', $userAddress)
+        ->with('profile', $profile)
+        ->with('userString', $userString);
 
 });
 
@@ -64,15 +66,49 @@ Route::post('/usergenerator', function(){
     //print_r($input);
 
     $users = Input::get('numberOfUsers');
-    $birthdate = Input::get('birthdate', 'off');
+    $userAddress = Input::get('userAddress', 'off');
     $profile = Input::get('profile', 'off');
+    $userString = '';
 
+    $faker = Faker\Factory::create();
+    
+    if($userAddress == 'off' && $profile == 'off')
+    {
+        for ($i=0; $i < $users; $i++)
+        {
+            $userString .= $faker->name."<br><br>";
+        }
+    }
+
+    if($userAddress == 'on' && $profile == 'off')
+    {
+        for ($i=0; $i < $users; $i++)
+        {
+            $userString .= $faker->name."<br>".$faker->address."<br><br>";
+        }
+    }
+
+    if($userAddress == 'off' && $profile == 'on')
+    {
+        for ($i=0; $i < $users; $i++)
+        {
+            $userString .= $faker->name."<br>".$faker->text."<br><br>";
+        }
+    }
+
+    if($userAddress == 'on' && $profile == 'on')
+    {
+        for ($i=0; $i < $users; $i++)
+        {
+            $userString .= $faker->name."<br>".$faker->address."<br>".$faker->text."<br><br>";
+        }
+    }
 
     return View::make('usergenerator')
         ->with('users', $users)
-        ->with('birthdate', $birthdate)
-        ->with('profile', $profile);
-
+        ->with('userAddress', $userAddress)
+        ->with('profile', $profile)
+        ->with('userString', $userString);
 
 });
 
