@@ -14,11 +14,11 @@ I used bootstrap. I used elements of bootstrap's "narrow jumbotron theme" css st
 http://getbootstrap.com/ 
 http://getbootstrap.com/examples/jumbotron-narrow/
 
-*Laravel
+* Laravel
 http://laravel.com/
 
-*Badxow lorem-ipsum package
+* Badxow lorem-ipsum package
 https://packagist.org/packages/badcow/lorem-ipsum
 
-*fzaninotto faker package
+* fzaninotto faker package
 https://packagist.org/packages/fzaninotto/faker
