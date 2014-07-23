@@ -31,7 +31,7 @@
 		  
 		  <div class="form-group">
 		    <label for="numberOfWords"># of users</label>
-		    <input maxlength=2 type="text" name = "numberOfUsers" id="numWords" value = {{{ $users }}}> (Max 9)
+		    <input maxlength=2 type="text" name = "numberOfUsers" id="numWords" value = {{{ $users }}}> (Max 99)
 		  </div>
 
 		  <div class="checkbox">
