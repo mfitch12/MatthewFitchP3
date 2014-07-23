@@ -39,7 +39,7 @@
     <div class="footer">
       <div class="centerIMG">
       <a href = "http://www.fitchwebdesign.com">
-      <img src = "images/fitchLogo.png" class="displayed" alt="logo">
+      <img src = "images/fitchLogo.png" alt="logo">
       </a>
       </div>
     </div>
