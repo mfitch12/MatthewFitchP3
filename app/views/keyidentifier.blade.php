@@ -36,6 +36,8 @@
 			<a href = '/lorem' role="button" class="btn btn-default">Lorem Ipsum Generator</a>
 			<br><br>
 			<a href = '/usergenerator' role="button" class="btn btn-default">User Generator</a>
+			<br>
+			<br>
 		</div>
 	</div>
 	<script src='js/keyidentifier.js'></script>
