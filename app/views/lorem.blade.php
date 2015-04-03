@@ -19,8 +19,9 @@
           <li><a href="/">Home</a></li>
           <li class="active"><a href="/lorem">Lorem</a></li>
           <li><a href="/usergenerator">Users</a></li>
+          <li><a href="/keyidentifier">Key Identifier</a></li>
         </ul>
-        <h3 class="text-muted">Developer's Best Friend</h3>
+        <h3 class="text-muted">Dev Tools</h3>
       </div>
 @stop
 
@@ -40,6 +41,8 @@
 	<div class = "col-md-6">
 		<p>Other Developer Tools:</p>
 		<a href = '/usergenerator' role="button" class="btn btn-default">Random User Generator</a>
+		<br><br>
+		<a href = '/keyidentifier' role="button" class="btn btn-default">Key Identifier</a>
 		<br><br>
 	</div>
 	</div>

@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Fitch - Project 3</title>
+    <title>Dev Tools</title>
 
     <link href= '{{ asset('css/bootstrap.min.css') }}' rel='stylesheet'>
     <link href='{{ asset('css/style.css') }}' rel="stylesheet">
+    <link href='{{ asset('css/customStyles.css') }}' rel="stylesheet">
 
     @yield('head')
 

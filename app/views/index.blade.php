@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('title')
-    Developer's Best Friend
+    Developer Tools
 @stop
 
 @section('description')
@@ -19,23 +19,27 @@
           <li class="active"><a href="/">Home</a></li>
           <li><a href="/lorem">Lorem</a></li>
           <li><a href="/usergenerator">Users</a></li>
+          <li><a href="/keyidentifier">Key Identifier</a></li>
         </ul>
-        <h3 class="text-muted">Developer's Best Friend</h3>
+        <h3 class="text-muted">Dev Tools</h3>
       </div>
 @stop
 
 @section('content')
 
 	<div class = "row">
-		<div class = "col-md-6">
-			<h4>Development Tools:</h4>
+		<div class = "col-md-4 btnCenter">
 			<a href = '/lorem' role="button" class="btn btn-default">Lorem Ipsum Generator</a>
-			<br><br>
-			<a href = '/usergenerator' role="button" class="btn btn-default">Random User Generator</a>
-			<br><br>
 		</div>
-
+		<div class = "col-md-4 btnCenter">
+			<a href = '/usergenerator' role="button" class="btn btn-default">Random User Generator</a>
+		</div>
+		<div class = "col-md-4 btnCenter">
+			<a href = '/keyidentifier' role="button" class="btn btn-default">Key-Press Identifier</a>
+		</div>
 	</div>
+	<br>
+	<br>
 
 
 @stop

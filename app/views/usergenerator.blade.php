@@ -19,8 +19,9 @@
           <li><a href="/">Home</a></li>
           <li><a href="/lorem">Lorem</a></li>
           <li class="active"><a href="/usergenerator">Users</a></li>
+          <li><a href="/keyidentifier">Key Identifier</a></li>
         </ul>
-        <h3 class="text-muted">Developer's Best Friend</h3>
+        <h3 class="text-muted">Dev Tools</h3>
       </div>
 @stop
 

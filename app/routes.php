@@ -112,6 +112,10 @@ Route::post('/usergenerator', function(){
 
 });
 
+Route::get('/keyidentifier', function() {
+    return View::make('keyidentifier');
+});
+
 
 Route::get('/test', function()
 {
